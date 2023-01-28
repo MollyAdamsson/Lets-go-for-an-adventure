@@ -354,6 +354,26 @@ def wild_stream():
             print("Invalid choice. Please enter '1' or '2' to continue")
             continue
 
+def complete_game():
+    print("The light from the outside world shines through the trees")
+    print("As you walk towards the end of the forest a couple of forest gnomes greet you")
+    print("\"You made it!! You're alive!!\"")
+    print("They chant and dance in a cirkel around you")
+    print("\"Well done, you made it to the other side. Go home and rest, you deserve it!\"")
+    print("Do you want to play again? (yes or no)")
+    while True:
+        choice = input("> ")
+        if choice == 'yes':
+            clearConsole()
+            start_game()
+            break
+        elif choice == 'no':
+            clearConsole()
+            print("Thank you for playing! Welcome back anytime!")
+            break
+        else:
+            print("Invalid choice. Please enter yes or no to continue.")
+            continue
 
 
 start_game()

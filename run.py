@@ -48,6 +48,21 @@ def start_game():
             clearConsole()
             continue
 
+def path_choice():
+    print("\033[32mLets get started. Do you want to move forward? Type 'y' for yes and 'n' for no and quit game\033[0m")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            clearConsole()
+            riddle_encounter
+            break
+        elif choice == 'n':
+            game_over
+            break
+        else:
+            print("\033[31mInvalid choice, please type 'y' or 'n'\033[0m")
+            continue
+
 
         
 start_game()

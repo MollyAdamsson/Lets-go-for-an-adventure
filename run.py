@@ -351,7 +351,7 @@ def wild_stream():
             complete_game()
             break
         else:
-            print("Invalid choice. Please enter '1' or '2'")
+            print("Invalid choice. Please enter '1' or '2' to continue")
             continue
 
 

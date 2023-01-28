@@ -334,5 +334,26 @@ def meet_wizard():
             print("Invalid choice. Please enter '1' or '2'")
             continue
 
+def wild_stream():
+    print("\033[31mYou come across a wild stream. What will you do?")
+    print("1. Swim over")
+    print("2. Jump over")
+    while True:
+        choice = input("Enter 1 or 2: ")
+        if choice =='1':
+            print("\033[32mYou swim over the wild stream and make it safely to the other side.")
+            clearConsole()
+            complete_game()
+            break
+        elif choice == '2':
+            print("\033[32mYou jump over the wild stream and make it safely to the other side.")
+            clearConsole()
+            complete_game()
+            break
+        else:
+            print("Invalid choice. Please enter '1' or '2'")
+            continue
+
+
 
 start_game()

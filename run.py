@@ -397,6 +397,22 @@ def player_death():
             print("Invalid choice, please enter 'y' or 'n' to continue.")
             continue
 
+def game_over():
+    print("This is where your story end, do you want to try again?")
+    print("Enter 'y' for yes and 'n' for no and quit game")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            clearConsole()
+            start_game()
+            break
+        elif choice == 'n':
+            print("Thank you for playing and welcome back!")
+            clearConsole()
+            break
+        else:
+            print("Invalid choice, please enter 'y' or 'n'")
+            continue
 
 
 start_game()

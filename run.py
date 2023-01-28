@@ -306,5 +306,33 @@ def meet_witch():
         else:
             print("\033[31mInvalid choice, please type 'y' or 'n'")
             continue
-               
+
+def meet_wizard():
+    print("\033[35mYou come across a wizard in the forest. He looks at you and gasps:")
+    print("\033[36m\"A human? In here? I havent seen any of your kind in a while\"")
+    print("\"Well, most of you look like goblins, but you don't smell as foul\"")
+    print("He smirks at you.")
+    print("\033[36m\"I've been looking for my treasure for days! Have you seen it?\"")
+    print("\033[35m1. Yes, here it is.")
+    print("2. No, I've never seen it.")
+    print("\033[35mWhat would you like to do? ")
+    while True:
+        choice = input("> ")
+        if choice == '1':
+            clearConsole()
+            print("\033[35mThe Wizard says: ")
+            print("\033[36m\"Ah, thank you! As a reward, I will teleport you to the end of the forest.\"")
+            complete_game()
+            break
+        elif choice == '2':
+            clearConsole()
+            print("\033[36mWizard: \"Good luck getting over the stream over there by yourself, you bafoon!\"")
+            print("\033[35mThe wizard grunts and disappears in a puff of smoke.")
+            wild_stream()
+            break
+        else:
+            print("Invalid choice. Please enter '1' or '2'")
+            continue
+
+
 start_game()

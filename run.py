@@ -63,6 +63,29 @@ def path_choice():
             print("\033[31mInvalid choice, please type 'y' or 'n'\033[0m")
             continue
 
+def path_choice_2():
+    print("\033[35m" + "The air is damp and filled with the scent of old trees" + "\033[0m")
+    print("\033[35m" + "The soft rustling of leaves scared you a bit, anything could be hiding in the bushes" + "\033[0m")
+    print("\033[35m" + "You get further in to the forest, there are huge tree logs laying everywhere." + "\033[0m")
+    print("\033[35m" + "There is one big one in the middle of the road, you have to climb over it to keep going" + "\033[0m")
+    print("\033[35m" + "Type '1' for yes to climb the log or type '2' to go another way." + "\033[0m")
+    while True:
+        choice = input("> ")
+        if choice == '1':
+            clearConsole()
+            path_choice_3()
+            break
+        elif choice == '2':
+            clearConsole()
+            path_choice_4()
+            break
+        else:
+            print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
+            continue
+
+
+        
+
 def riddle_encounter():
     riddles = ["What starts with an E, ends with an E, but only contains one letter?"]
     riddle = random.choice(riddles)
@@ -84,8 +107,72 @@ def riddle_encounter():
         else:
             print("\033[32mIncorrect. You have failed the task.\033[0m")
             game_over()
-            continue
-        
+
+def player_encounter_goblin():
+    goblin_health = 40
+    goblin_attack = 15
+    print("\033[31mYou have come across a nasty forest goblin!\033[0m")
+    print("\033[31mDo you want to attack or run away?\033[0m")
+    print("\033[31mEnter 'a' to attack or 'r' to run away!\033[0m")
+    choice = input("\033[31m>\033[0m ")
+    while goblin_health > 0:
+        if choice == 'a':
+            global player_health
+            player_attack = random.randint(10, 14)
+            goblin_health -= player_attack
+            if goblin_health <= 0:
+                clearConsole()
+                print("\033[32mYou have defeated the goblin! You may continue on your journey.\033[0m")
+                print("\033[32mYou have received a 'Badge of Honor', only brave ones get this.\033[0m")
+                print("\033[32mDo you want to continue your journey? Enter '1' for yes and '2' for no and end game.\033[0m")
+                while True:
+                    choice = input("\033[32m>\033[0m ")
+                    if choice == '1':
+                        meet_wizard()
+                        break
+                    elif choice == '2':
+                        game_over()
+                        break
+                    else:
+                        print("\033[31mInvalid choice, please enter '1' or '2'\033[0m")
+                        continue
+            else:
+                print("\033[31mThe goblin now has " + str(goblin_health) + " health.\033[0m")
+                player_health -= goblin_attack
+            if player_health <= 0:
+                    clearConsole()
+                    player_death()
+            else:
+                print("\033[31mYou now have " + str(player_health) + " health.\033[0m")
+                print("\033[31mDo you want to attack or run? Enter 'a' to attack and 'r' to run.\033[0m")
+                choice = input("\033[31m>\033[0m ")
+        elif choice == 'r':
+            run_away_chance = random.randint(10,14)
+            if run_away_chance <= 30:
+                clearConsole()
+                print("\033[32mYou managed to run away safely from the goblin.\033[0m")
+                print("\033[32mDo you want to continue your journey? Enter '1' for yes and '2' for no and end game.\033[0m")
+                choice = input("\033[32m>\033[0m ")
+                if choice == '1':
+                    meet_wizard()
+                elif choice == '2':
+                    game_over()
+                else:
+                    print("\033[31mInvalid choice, please enter '1' or '2'\033[0m")
+                    choice = input("\033[31m>\033[0m ")
+            else:
+                clearConsole()
+                print("\033[31mYou failed to run away and the goblin hit you.\033[0m")
+                player_health -= goblin_attack
+                if player_health <= 0:
+                    player_death()
+                else:
+                    print("\033[31mYou now have {player_health} health.\033[0m")
+                    print("\033[31mDo you want to attack or run? Enter 'a' to attack and 'r' to run.\033[0m")
+                    choice = input("\033[31m>\033[0m ")
+        else:
+            print("\033[31mInvalid choice, please type 'a' or 'r'\033[0m")
+            choice = input("\033[31m>\033[0m ")
 
 
         

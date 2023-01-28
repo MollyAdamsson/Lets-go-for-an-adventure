@@ -375,5 +375,28 @@ def complete_game():
             print("Invalid choice. Please enter yes or no to continue.")
             continue
 
+def player_death(): 
+
+    ''' Explains options to the player if they die'''
+
+    global player_health
+    print("You have died! You have a healing potion in your inventory")
+    print("would you like to use it? Enter 'y' for yes or 'n' for no and end game")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            player_health = 75
+            print(f"You have been resurrected! Your health is now {player_health}.")
+            clearConsole()
+            break
+        elif choice == 'n':
+            game_over()
+            clearConsole()
+            break
+        else:
+            print("Invalid choice, please enter 'y' or 'n' to continue.")
+            continue
+
+
 
 start_game()

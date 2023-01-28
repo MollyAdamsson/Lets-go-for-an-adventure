@@ -49,6 +49,7 @@ def start_game():
             continue
 
 def path_choice():
+    '''First path that leads the player to the next path'''
     print("\033[32mLets get started. Do you want to move forward? Type 'y' for yes and 'n' for no and quit game\033[0m")
     while True:
         choice = input("> ")
@@ -64,6 +65,8 @@ def path_choice():
             continue
 
 def path_choice_2():
+    '''Path choice 2, here the player has to make 
+    a choice if the want to go to path 3 or 4'''
     print("\033[35m" + "The air is damp and filled with the scent of old trees" + "\033[0m")
     print("\033[35m" + "The soft rustling of leaves scared you a bit, anything could be hiding in the bushes" + "\033[0m")
     print("\033[35m" + "You get further in to the forest, there are huge tree logs laying everywhere." + "\033[0m")
@@ -84,6 +87,7 @@ def path_choice_2():
             continue
 
 def path_choice_3():
+    '''New path that lead the player to the enemy/goblin encounter'''
     print("\033[35mYou can barely see anything now, the light that once shined through the tree tops is now a distant memory")
     print("This is the last time I leave my house, you mutter. It's just not worth it")
     print("You keep on walking, jumping over the big branches streching over the pathway")
@@ -106,6 +110,8 @@ def path_choice_3():
             continue
 
 def path_choice_4():
+    '''New path that introduces the player to an owl that will give them som
+    inspiring words to keep on going + leads to meet the Witch'''
     print("\033[35mYou keep walking on what you think is the path, you are not sure.")
     print("It doesn't seem like anyone has been here for years")
     print("the roots of the trees are everywhere.")
@@ -130,6 +136,74 @@ def path_choice_4():
                     clearConsole()
                     meet_witch()
                     break
+                else:
+                    print("\033[1;31;40mInvalid choice, please type 'l' to keep going\033[0;37;40m")
+                    continue
+        else:
+            print("\033[91mInvalid choice, please type 'l' or 'f'\033[0m")
+            continue
+
+def path_choice_5():
+    print("You move along, wondering what the beautiful Witch meant")
+    print("How many times will you rise and fall?")
+    print("You study the the binders of the book when all of a sudden")
+    print("three small forest gnomes appear, right in fron of you")
+    print("You: \"Hello, can I help you\" ")
+    print("The gnomes look at each other, and then back at you")
+    print("Then all of them open their mouths an at the same time they say: ")
+    print(" \"You have to hurry, he is waiting for you\"")
+    print("You:\"Huh, who is?\" ")
+    print("\"You will find out soon, just hurry!\" They say.")
+    print("They then grab each others hands and scurries off")
+    print("You stand still for quick moment, wondering what just happend")
+    print("You then say to yourself: ")
+    print("\"Well I cant stay here, can I? I have to keep going\"")
+    print("Do you want to continue? typ 'y' for yes and 'n' for no and end game")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            meet_wizard()
+            break
+        elif choice == 'n':
+            game_over()
+            break
+        else:
+            print("invalid choice, please type 'y' or 'n'")
+            continue
+
+def meet_witch():
+    '''
+    Function that introduce the witch, 
+    here the player is given a book and an option to proceed to the Wizard
+    '''
+    print("\033[35mA beautiful woman appears\033[0m")
+    print("\033[35mWith a soft smile she says:")
+    print("\033[36m\"Ah the wispers were right\" ")
+    print("\033[36m\"There is a human here, I've been looking all over for you\" ")
+    print("\033[36m\"I need to tell you something, a few words of wisdom to keep in mind\"")
+    print("\"You ready? Okay, listen closely\"")
+    print("\"The greatest glory in living lies not in never falling, but in rising every time we fall\"")
+    print("\"You need to remember this for the rest of your journey, okay\"?")
+    print("\"Matter of fact, take this book, it is filled with knowledge\"\033[0m")
+    print("\033[35mYou have collected the book of wisdom. It has been added to your inventory")
+    print("\033[35mSuddenly the beautiful witch disapears and you're all alone")
+    print("\033[35mDo you want to continue your journey? Enter 'y' for yes or 'n' for no.")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            clearConsole()
+            path_choice_5()
+            break
+        elif choice == 'n':
+            clearConsole()
+            game_over()
+            break
+        else:
+            print("\033[31mInvalid choice, please type 'y' or 'n'")
+            continue
+
+            
+        
 
 
 
@@ -137,6 +211,7 @@ def path_choice_4():
         
 
 def riddle_encounter():
+    '''Solve the riddle, gives different options + a valuable treasure'''
     riddles = ["What starts with an E, ends with an E, but only contains one letter?"]
     riddle = random.choice(riddles)
     print("\033[32mYou come across a treasure chest and a sign with a riddle written on it, to open the chest you must answer correctly!\033[0m")
@@ -158,7 +233,10 @@ def riddle_encounter():
             print("\033[32mIncorrect. You have failed the task.\033[0m")
             game_over()
 
+
+
 def player_encounter_goblin():
+    '''Player meets the goblin/enemy'''
     goblin_health = 40
     goblin_attack = 15
     print("\033[31mYou have come across a nasty forest goblin!\033[0m")

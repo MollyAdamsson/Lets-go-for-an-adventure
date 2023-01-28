@@ -306,7 +306,5 @@ def meet_witch():
         else:
             print("\033[31mInvalid choice, please type 'y' or 'n'")
             continue
-
-
-        
+               
 start_game()

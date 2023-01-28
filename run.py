@@ -54,14 +54,38 @@ def path_choice():
         choice = input("> ")
         if choice == 'y':
             clearConsole()
-            riddle_encounter
+            riddle_encounter()
             break
         elif choice == 'n':
-            game_over
+            game_over()
             break
         else:
             print("\033[31mInvalid choice, please type 'y' or 'n'\033[0m")
             continue
+
+def riddle_encounter():
+    riddles = ["What starts with an E, ends with an E, but only contains one letter?"]
+    riddle = random.choice(riddles)
+    print("\033[32mYou come across a treasure chest and a sign with a riddle written on it, to open the chest you must answer correctly!\033[0m")
+    print("\033[32m" + riddle + "\033[0m")
+    print("\033[32m1. Elephant\033[0m")
+    print("\033[32m2. Envelope\033[0m")
+    print("\033[32m3. Eagle\033[0m")
+    print("\033[32m4. Edge\033[0m")
+    while True:
+        answer = input("\033[32mWhat is your answer?\033[0m ")
+        if answer.lower() == "2":
+            clearConsole()
+            print("\033[32mCorrect! The chest is open! You collect the treasure inside!\033[0m")
+            print("\033[32mThe treasure is shiny and heavy. It must be worth alot.\033[0m")
+            print("\033[32mYou put in your backpack and start walking again.\033[0m")
+            path_choice_2()
+            break
+        else:
+            print("\033[32mIncorrect. You have failed the task.\033[0m")
+            game_over()
+            continue
+        
 
 
         

@@ -105,6 +105,32 @@ def path_choice_3():
             print("\033[31mInvalid choice, please type 'y' or 'r'\033[0m")
             continue
 
+def path_choice_4():
+    print("\033[35mYou keep walking on what you think is the path, you are not sure.")
+    print("It doesn't seem like anyone has been here for years")
+    print("the roots of the trees are everywhere.")
+    print("All of a sudden you see an old owl sitting on a branch.")
+    print("It clears its throat and says:") 
+    print("\033[36m\"Hello there brave one, I've been waiting for you!\"\033[0m")
+    print("\033[36m\"To get to the end you must be even braver, hold on!\"\033[0m")
+    print("\033[35mType 'l' to go left or 'f' to go forward")
+    while True:
+        choice = input("> \033[0m")
+        if choice == 'l':
+            clearConsole()
+            meet_witch()
+            break
+        elif choice == 'f':
+            print("\033[31mThe trees grow too dense here, you can't get through\033[0m")
+            print("\033[31mYou have to take another path\033[0m")
+            print("\033[31mChoose 'l' to go left\033[0m")
+            while True:
+                choice = input ("> ")
+                if choice == 'l':
+                    clearConsole()
+                    meet_witch()
+                    break
+
 
 
 

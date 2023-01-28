@@ -83,6 +83,30 @@ def path_choice_2():
             print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
+def path_choice_3():
+    print("\033[35mYou can barely see anything now, the light that once shined through the tree tops is now a distant memory")
+    print("This is the last time I leave my house, you mutter. It's just not worth it")
+    print("You keep on walking, jumping over the big branches streching over the pathway")
+    print("You sense that you are not alone, someone is watching you. But where?")
+    print("You stop in your tracks, the smell of something rotten hits you!")
+    print("Do you want to keep going? Type 'y' for yes or 'n' for no and run away.\033[0m")
+    while True:
+        choice = input("> ")
+        if choice == 'y':
+            clearConsole()
+            player_encounter_goblin()
+            break
+        elif choice == 'n':
+            clearConsole()
+            print("You have no choice")
+            player_encounter_goblin()
+            break
+        else:
+            print("\033[31mInvalid choice, please type 'y' or 'r'\033[0m")
+            continue
+
+
+
 
         
 
@@ -101,7 +125,7 @@ def riddle_encounter():
             clearConsole()
             print("\033[32mCorrect! The chest is open! You collect the treasure inside!\033[0m")
             print("\033[32mThe treasure is shiny and heavy. It must be worth alot.\033[0m")
-            print("\033[32mYou put in your backpack and start walking again.\033[0m")
+            print("\033[32mYou put it in your backpack and start walking again.\033[0m")
             path_choice_2()
             break
         else:

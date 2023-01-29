@@ -322,16 +322,45 @@ def meet_wizard():
             clearConsole()
             print("\033[35mThe Wizard says: ")
             print("\033[36m\"Ah, thank you! As a reward, I will teleport you to the end of the forest.\"")
-            complete_game()
+            print("\033[35m" + "Do you want to continue? Enter '1' for yes or '2' for no.")
+            while True:
+                choice = input("> ")
+                if choice == '1':
+                    complete_game()
+                    clearConsole()
+                    break
+                elif choice == '2':
+                    game_over()
+                    clearConsole()
+                    break
+                else:
+                    print("\033[31mInvalid choice, please type '1' or '2'")
+                    clearConsole()
+                    continue
             break
         elif choice == '2':
             clearConsole()
             print("\033[36mWizard: \"Good luck getting over the stream over there by yourself, you bafoon!\"")
             print("\033[35mThe wizard grunts and disappears in a puff of smoke.")
-            wild_stream()
-            break
+            print("\033[35m" + "Do you want to continue? Enter '1' for yes or '2' for no.")
+            while True:
+                choice = input("> ")
+                if choice == '1':
+                    wild_stream()
+                    clearConsole()
+                    break
+                elif choice == '2':
+                    game_over()
+                    clearConsole()
+                    break
+                else:
+                    print("\033[31mInvalid choice, please type '1' or '2'")
+                    clearConsole()
+                    continue
+                break
         else:
-            print("Invalid choice. Please enter '1' or '2'")
+            print("\033[31mInvalid choice, please type '1' or '2'")
+            clearConsole()
             continue
 
 def wild_stream():

@@ -212,7 +212,7 @@ def riddle_encounter():
             print("\033[32mCorrect! The chest is open! You collect the treasure inside!\033[0m")
             print("\033[32mThe treasure is shiny and heavy. It must be worth alot.\033[0m")
             print("\033[32mYou put it in your backpack and start walking again.\033[0m")
-            print("\033[32mDo you want to continue? typ '1' for yes or '2' for no\033[0m")
+            print("\033[32mDo you want to continue? type '1' for yes or '2' for no\033[0m")
             while True:
                 choice = input(">")
                 if choice == '1':
@@ -344,11 +344,13 @@ def meet_wizard():
     print("\033[35mYou come across a wizard in the forest. He looks at you and gasps:")
     print("\033[36m\"A human? In here? I havent seen any of your kind in a while\"")
     print("\"Well, most of you look like goblins, but you don't smell as foul\"")
-    print("He smirks at you.")
+    print("\033[35m" + "He smirks at you." + "\033[0m")
     print("\033[36m\"I've been looking for my treasure for days! Have you seen it?\"")
-    print("\033[35m1. Yes, here it is.")
-    print("2. No, I've never seen it.")
+    print("\033[35mYou remember the treasure you got when you answered the riddle.")
+    print("\033[35mIt seemed so valuable... ")
     print("\033[35mWhat would you like to do? ")
+    print("\033[33m" + "1. Yes, here it is." + "\033[0m")
+    print("\033[33m" + "2. No, I've never seen it." + "\033[0m")
     while True:
         choice = input("> ")
         if choice == '1':
@@ -444,7 +446,7 @@ def complete_game():
     print("\033[32m" + "As you walk towards the end of the forest") 
     print("\033[32m" + "a couple of forest gnomes greet you")
     print("\033[36m" + "\"You made it!! You're alive!!\"")
-    print("\033[35m" + "They chant and dance in a cirkel around you")
+    print("\033[32m" + "They chant and dance in a cirkel around you")
     print("\033[36m" + "\"Well done, you made it to the other side.\"")
     print("\033[36m" + "\"Go home and rest, you deserve it!\"")
     print("\033[32m" + "Do you want to play again? (1. yes or 2. no)")

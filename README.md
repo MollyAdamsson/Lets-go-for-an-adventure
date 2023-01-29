@@ -102,6 +102,14 @@ image 2 of text
 * I would like to add a typing function, so that text rolls out on the 
 screen when the player enters a new section.
 
+## Technologies Used
+
+* Gitpod
+* Gitpod
+* Python
+* Stack overflow
+
+
 ## Testing
 
 ### Manual testing

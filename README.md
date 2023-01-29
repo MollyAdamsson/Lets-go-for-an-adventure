@@ -130,9 +130,11 @@ image here:
 ## Credits
 
 ### content
-* I used Code Institute's Love Sandwiches Walkthrough (repo here) for guidance with code structure, linking my program to Google Sheets using an API, and deployment steps.
+* I used Code Institute's Love Sandwiches Walkthrough for guidance with code structure and deployment steps.
+* To change the color of the text I used ANSI color. Page from Stackoverflow helping it explain it to me found [here](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)
 
-## Acknowledgements
+
+### Acknowledgements
 
 
 Molly Adamsson, 2023

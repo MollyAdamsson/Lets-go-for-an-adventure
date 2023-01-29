@@ -154,21 +154,21 @@ def path_choice_4():
             continue
 
 def path_choice_5():
-    print("You move along, wondering what the beautiful Witch meant")
-    print("How many times will you rise and fall?")
-    print("You study the the binders of the book when all of a sudden")
-    print("three small forest gnomes appear, right in fron of you")
-    print("You: \"Hello, can I help you\" ")
-    print("The gnomes look at each other, and then back at you")
-    print("Then all of them open their mouths an at the same time they say: ")
-    print(" \"You have to hurry, he is waiting for you\"")
-    print("You:\"Huh, who is?\" ")
-    print("\"You will find out soon, just hurry!\" They say.")
-    print("They then grab each others hands and scurries off")
-    print("You stand still for quick moment, wondering what just happend")
-    print("You then say to yourself: ")
-    print("\"Well I cant stay here, can I? I have to keep going\"")
-    print("Do you want to continue? typ 'y' for yes and 'n' for no and end game")
+    print("\033[35m" + "You move along, wondering what the beautiful Witch meant")
+    print("\033[35m" + "How many times will you rise and fall?")
+    print("\033[35m" + "You study the the binders of the book when all of a sudden")
+    print("\033[35m" + "three small forest gnomes appear, right in fron of you")
+    print("\033[36m" + "You: \"Hello, can I help you\"")
+    print("\033[35m" + "The gnomes look at each other, and then back at you")
+    print("\033[35m" + "Then all of them open their mouths at the same time and say: ")
+    print("\033[36m" + " \"You have to hurry, he is waiting for you\"")
+    print("\033[36m" + "You:\"Huh, who is?\" ")
+    print("\033[36m" + "Them:\"You will find out soon, just hurry!\"")
+    print("\033[35m" + "They then grab each others hands and scurries off")
+    print("\033[35m" + "You stand still for quick moment, wondering what just happend")
+    print("\033[35m" + "You then say to yourself: ")
+    print("\033[36m" + "\"Well I cant stay here, can I? I have to keep going\"")
+    print("\033[35m" + "Do you want to continue? typ 'y' for yes and 'n' for no and end game")
     while True:
         choice = input("> ")
         if choice == 'y':
@@ -178,7 +178,7 @@ def path_choice_5():
             game_over()
             break
         else:
-            print("invalid choice, please type 'y' or 'n'")
+            print("\033[91mInvalid choice, please type 'y' or 'n'\033[0m"))
             continue
 
 def riddle_encounter():

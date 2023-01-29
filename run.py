@@ -167,7 +167,7 @@ def path_choice_5():
     print("\033[35m" + "You move along, wondering what the beautiful Witch meant")
     print("\033[35m" + "How many times will you rise and fall?")
     print("\033[35m" + "You study the the binders of the book when all of a sudden")
-    print("\033[35m" + "three small forest gnomes appear, right in fron of you")
+    print("\033[35m" + "three small forest gnomes appear, right in front of you")
     print("\033[36m" + "You: \"Hello, can I help you\"")
     print("\033[35m" + "The gnomes look at each other, and then back at you")
     print("\033[35m" + "Then all of them open their mouths at the same time and say: ")
@@ -182,9 +182,11 @@ def path_choice_5():
     while True:
         choice = input("> ")
         if choice == 'y':
+            clearConsole()
             meet_wizard()
             break
         elif choice == 'n':
+            clearConsole()
             game_over()
             break
         else:
@@ -214,12 +216,12 @@ def riddle_encounter():
             while True:
                 choice = input(">")
                 if choice == '1':
-                    path_choice_2()
                     clearConsole()
+                    path_choice_2()
                     break
                 elif choice == '1':
-                    game_over()
                     clearConsole()
+                    game_over()
                     break
                 else:
                     print("\033[31mInvalid choice, please enter '1' or '2'\033[0m")
@@ -252,12 +254,12 @@ def player_encounter_goblin():
                 while True:
                     choice = input("\033[32m>\033[0m ")
                     if choice == '1':
-                        meet_wizard()
                         clearConsole()
+                        meet_wizard()
                         break
                     elif choice == '2':
-                        game_over()
                         clearConsole()
+                        game_over()
                         break
                     else:
                         print("\033[31mInvalid choice, please enter '1' or '2'\033[0m")
@@ -307,7 +309,7 @@ def meet_witch():
     Function that introduce the witch, 
     here the player is given a book and an option to proceed to the Wizard
     '''
-    print("\033[35mA beautiful woman appears\033[0m")
+    print("\033[35mA beautiful Witch appears\033[0m")
     print("\033[35mWith a soft smile she says:")
     print("\033[36m\"Ah the wispers were right\" ")
     print("\033[36m\"There is a human here, I've been looking all over for you\" ")
@@ -357,12 +359,12 @@ def meet_wizard():
             while True:
                 choice = input("> ")
                 if choice == '1':
-                    complete_game()
                     clearConsole()
+                    complete_game()
                     break
                 elif choice == '2':
-                    game_over()
                     clearConsole()
+                    game_over()
                     break
                 else:
                     print("\033[31mInvalid choice, please type '1' or '2'")
@@ -377,12 +379,12 @@ def meet_wizard():
             while True:
                 choice = input("> ")
                 if choice == '1':
-                    wild_stream()
                     clearConsole()
+                    wild_stream()
                     break
                 elif choice == '2':
-                    game_over()
                     clearConsole()
+                    game_over()
                     break
                 else:
                     print("\033[31mInvalid choice, please type '1' or '2'")
@@ -407,6 +409,20 @@ def wild_stream():
         choice = input("Enter 1 or 2: ")
         if choice =='1':
             print("\033[32mYou swim over the wild stream and make it safely to the other side.")
+            print("Type '1' to continue or '2' to end game")
+            while True:
+                choice = input("> ")
+                if choice == '1':
+                    clearConsole()
+                    complete_game()
+                    break
+                elif choice == '2':
+                    clearConsole()
+                    game_over()
+                    break
+                else:
+                    print("\033[31mInvalid choice, please type '1' or '2'")
+                    continue
             clearConsole()
             complete_game()
             break

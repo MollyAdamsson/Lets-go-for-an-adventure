@@ -154,6 +154,11 @@ def path_choice_4():
             continue
 
 def path_choice_5():
+    
+    '''
+    The last path choice, here the player meet some forest gnomes
+    This path leads to the Wizard.
+    '''
     print("\033[35m" + "You move along, wondering what the beautiful Witch meant")
     print("\033[35m" + "How many times will you rise and fall?")
     print("\033[35m" + "You study the the binders of the book when all of a sudden")
@@ -308,6 +313,11 @@ def meet_witch():
             continue
 
 def meet_wizard():
+
+    '''
+    A powerful Wizard who looks for his lost treasure, 
+    the player is given an option to give it to him or not
+    '''
     print("\033[35mYou come across a wizard in the forest. He looks at you and gasps:")
     print("\033[36m\"A human? In here? I havent seen any of your kind in a while\"")
     print("\"Well, most of you look like goblins, but you don't smell as foul\"")
@@ -364,6 +374,11 @@ def meet_wizard():
             continue
 
 def wild_stream():
+    
+    '''
+    The last obstacle in  the game, this is were the player ends up if they don't
+    help the wizard and give him his treasure.
+    '''
     print("\033[31mYou come across a wild stream. What will you do?")
     print("1. Swim over")
     print("2. Jump over")
@@ -380,28 +395,34 @@ def wild_stream():
             complete_game()
             break
         else:
-            print("Invalid choice. Please enter '1' or '2' to continue")
+            print("\033[31mInvalid choice, please type '1' or '2'")
             continue
 
 def complete_game():
-    print("The light from the outside world shines through the trees")
-    print("As you walk towards the end of the forest a couple of forest gnomes greet you")
-    print("\"You made it!! You're alive!!\"")
-    print("They chant and dance in a cirkel around you")
-    print("\"Well done, you made it to the other side. Go home and rest, you deserve it!\"")
-    print("Do you want to play again? (yes or no)")
+
+    '''The game is finished and they have won.
+    The player is greeted by some celebrating forest gnomes'''
+
+    print("\033[32m" + "The light from the outside world shines through the trees")
+    print("\033[32m" + "As you walk towards the end of the forest") 
+    print("\033[32m" + "a couple of forest gnomes greet you")
+    print("\033[36m" + "\"You made it!! You're alive!!\"")
+    print("\033[35m" + "They chant and dance in a cirkel around you")
+    print("\033[36m" + "\"Well done, you made it to the other side.\"")
+    print("\033[36m" + "\"Go home and rest, you deserve it!\"")
+    print("\033[32m" + "Do you want to play again? (1. yes or 2. no)")
     while True:
         choice = input("> ")
-        if choice == 'yes':
+        if choice == '1':
             clearConsole()
             start_game()
             break
-        elif choice == 'no':
+        elif choice == '2':
             clearConsole()
-            print("Thank you for playing! Welcome back anytime!")
+            print("\033[32m" + "Thank you for playing! Welcome back anytime!")
             break
         else:
-            print("Invalid choice. Please enter yes or no to continue.")
+            print("\033[31mInvalid choice, please type '1' or '2'")
             continue
 
 def player_death(): 
@@ -409,13 +430,13 @@ def player_death():
     ''' Explains options to the player if they die'''
 
     global player_health
-    print("You have died! You have a healing potion in your inventory")
-    print("would you like to use it? Enter 'y' for yes or 'n' for no and end game")
+    printprint("\033[31m" + "You have died! You have a healing potion in your inventory")
+    print("\033[32m" + "Enter 'y' for yes and use it or 'n' for no and end game")
     while True:
         choice = input("> ")
         if choice == 'y':
             player_health = 75
-            print(f"You have been resurrected! Your health is now {player_health}.")
+            print("\033[32m" + f"You have been redeemed! Your health is now "+ str(player_health)+"")
             clearConsole()
             break
         elif choice == 'n':
@@ -423,12 +444,15 @@ def player_death():
             clearConsole()
             break
         else:
-            print("Invalid choice, please enter 'y' or 'n' to continue.")
+            print("\033[31mInvalid choice, please type 'y' or 'n'")
             continue
 
 def game_over():
-    print("This is where your story end, do you want to try again?")
-    print("Enter 'y' for yes and 'n' for no and quit game")
+
+    ''' The player has died and the game is over, but they have options to try again if they want.'''
+
+    print("\033[31m" + "This is where your story end, do you want to try again?")
+    print("\033[32m" + "Enter 'y' for yes and 'n' for no and quit game")
     while True:
         choice = input("> ")
         if choice == 'y':
@@ -436,11 +460,11 @@ def game_over():
             start_game()
             break
         elif choice == 'n':
-            print("Thank you for playing and welcome back!")
+            print("\033[32m" + "Thank you for playing and welcome back!")
             clearConsole()
             break
         else:
-            print("Invalid choice, please enter 'y' or 'n'")
+            print("\033[31mInvalid choice, please type '1' or '2'")
             continue
 
 

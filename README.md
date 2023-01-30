@@ -60,7 +60,7 @@ the game and give you more information about your upcoming journey.
 
 * The player will get the chance of meeting a goblin, the player has to fight it and if they win they get a badge of honor to collect and then they can continue to meet the wizard. 
 
-![Goblin](readme.images/goblin.png)
+![Goblin](readme.images/Goblin.png)
 
 * The player will also get the chance of meeting a witch, she will give the player a few words of wisdom and then proceed to give them a "Book of wisdom" and the player collects it as well. 
 
@@ -90,9 +90,9 @@ the game and give you more information about your upcoming journey.
 * If the player enters an invalid answer they will be presented with an error message.
 * They can look a bit different but here are a few of them:
 
-image
-image
-image
+![Error 1](readme.images/invalid.png)
+![Error 2](readme.images/error3.png)
+
 
 ### Game over
 

@@ -9,7 +9,7 @@
 * The original one I made was not the one that resulted in the finished product, I realised that some of the steps that I first planned out was a bit unnecessary. And I also felt that i wanted to make different paths for frequent players.
 
 * This is the one I ended up using:
-![Flowchart]()
+![Flowchart](readme.images/flowchart.png)
 
 ## User Experience
 
@@ -33,7 +33,7 @@
 
 * At the begining the user is asked if they want to start the game with a question asking: "Are you ready?" "Enter 1. to start game and enter 2. to quit".
 
-![Main menu]()
+![Main menu](images/flowchart)
 
 ### Path ways
 

@@ -5,8 +5,9 @@ import os
 def clearConsole():
     command = 'clear'
     if os.name in ('nt', 'dos'):
-        command ='cls'
+        command = 'cls'
     os.system(command)
+
 
 player_health = 70
 player_attack = 10
@@ -15,7 +16,7 @@ player_defense = 5
 
 def start_game():
 
-    '''Introduction and initial setup to game, introuces the rules and mission'''
+    '''Introduction and initial setup to game, rules and mission'''
 
     print("\033[32mWelcome to the adventure game!")
     print("\033[32mYou are now about to embark on an epic journey.")
@@ -24,16 +25,23 @@ def start_game():
     print("\033[32mThis is the adventure of a life time!")
     player_name = input("\033[32mWhat is your name?\"")
     clearConsole()
-    print("\033[32m" + f"Welcome " + str(player_name) + " \nto the Damned Willow Forest!" + "\033[0m")
-    print("\033[32m" + "You are staring at the dense growing trees," + "\033[0m")
+    print("\033[32m" + f"Welcome " + str(player_name) + " ""\033[0m")
+    print("\033[32m" + f"to the Damned Willow Forest!" + "\033[0m")
+    print("\033[32m" + "You are staring at the dense trees," + "\033[0m")
     print("\033[32m" + "wondering how you will get by." + "\033[0m")
-    print("\033[32m" + "The first thing you see is a signpost that warns \nyou about the many obstacles" + "\033[0m")
-    print("\033[32m" + "you may meet inside and that you have to overcome \nthem to continue on your journey." + "\033[0m")
-    print("\033[32m" + "They will test your skills and determination so you can get home." + "\033[0m")
-    print("\033[32m" + "Take a deep breath, and let the adventure begin!" + "\033[0m")
-    
-    while True: 
-        choice = input("\033[32m" + "Are you ready? Type 'y' for yes or 'n' for no > " + "\033[0m")
+    print("\033[32m" + "The first thing you see is a signpost" + "\033[0m")
+    print("\033[32m" + "that warn you about the many obstacles" + "\033[0m")
+    print("\033[32m" + "you may meet inside and" + "\033[0m")
+    print("\033[32m" + "that you have to overcome" + "\033[0m")
+    print("\033[32m" + "them to continue on your journey." + "\033[0m")
+    print("\033[32m" + "They will test your skills and" + "\033[0m")
+    print("\033[32m" + "determination so you can get home." + "\033[0m")
+    print("\033[32m" + "Take a deep breath," + "\033[0m")
+    print("\033[32m" + "and let the adventure begin!" + "\033[0m")
+ 
+    while True:
+        choice = input("\033[32m" + "Are you ready? Type 'y' for" + "\033[0m")
+        choice = input("\033[32m" + " yes or 'n' for no > " + "\033[0m")
         if choice == 'y':
             clearConsole()
             print("\033[32m" + "Here is some valid information about your character: \n Health: " + str(player_health) + "\n Attack: " + str(player_attack) + "\n Defense: " + str(player_defense) + "\033[0m")
@@ -52,12 +60,13 @@ def start_game():
             clearConsole()
             continue
 
+
 def path_choice():
 
     '''First path that leads the player to the next path'''
 
     print("\033[32mLets get started. Do you want to move forward?\033[0m")
-    print("\033[32Type 'y' for yes and 'n' for no and quit game\033[0m")
+    print("\033[32mType 'y' for yes and 'n' for no and quit game\033[0m")
     while True:
         choice = input("> ")
         if choice == 'y':
@@ -71,9 +80,10 @@ def path_choice():
             print("\033[31mInvalid choice, please type 'y' or 'n'\033[0m")
             continue
 
+
 def path_choice_2():
 
-    '''Path choice 2, here the player has to make 
+    '''Path choice 2, here the player has to make
     a choice if the want to go to path 3 or 4'''
 
     print("\033[35m" + "The air is damp and filled with" + "\033[0m")
@@ -82,7 +92,8 @@ def path_choice_2():
     print("\033[35m" + "anything could be hiding in the bushes" + "\033[0m")
     print("\033[35m" + "You get further in to the forest," + "\033[0m")
     print("\033[35m" + "there are tree logs laying everywhere." + "\033[0m")
-    print("\033[35m" + "There's a big one in the middle of the road," + "\033[0m")
+    print("\033[35m" + "There's a big one" + "\033[0m")
+    print("\033[35m" + "in the middle of the road," + "\033[0m")
     print("\033[35m" + "you have to climb over it to keep going" + "\033[0m")
     print("\033[35m" + "Type '1' for yes to climb the log or type" + "\033[0m")
     print("\033[35m" + "'2' to go another way." + "\033[0m")
@@ -100,6 +111,7 @@ def path_choice_2():
             print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
+
 def path_choice_3():
 
     '''New path that lead the player to the enemy/goblin encounter'''
@@ -115,7 +127,7 @@ def path_choice_3():
     print("\033[35m" + "someone is watching you.")
     print("\033[35m" + "You stop in your tracks,")
     print("\033[35m" + "the smell of something rotten hits you!")
-    print("\033[35m" + "Do you want to keep going?") 
+    print("\033[35m" + "Do you want to keep going?")
     print("Type 'y' for yes or 'n' for no and run away.\033[0m")
     while True:
         choice = input("> ")
@@ -132,6 +144,7 @@ def path_choice_3():
             print("\033[31mInvalid choice, please type 'y' or 'r'\033[0m")
             continue
 
+
 def path_choice_4():
 
     '''New path that introduces the player to an owl that will give them som
@@ -142,7 +155,7 @@ def path_choice_4():
     print("It doesn't seem like anyone has been here for years")
     print("the roots of the trees are everywhere.")
     print("All of a sudden you see an old owl sitting on a branch.")
-    print("It clears its throat and says:") 
+    print("It clears its throat and says:")
     print("\033[36m\"Hello there brave one,\"\033[0m")
     print("\033[36m\"I've been waiting for you!\"\033[0m")
     print("\033[36m\"To get to the end you must be even braver\"\033[0m")
@@ -173,8 +186,9 @@ def path_choice_4():
             print("\033[91mInvalid choice, please type 'l' or 'f'\033[0m")
             continue
 
+
 def path_choice_5():
-    
+
     '''
     The last path choice, here the player meet some forest gnomes
     This path leads to the Wizard.
@@ -213,11 +227,13 @@ def path_choice_5():
             print("\033[91mInvalid choice, please type 'y' or 'n'\033[0m")
             continue
 
+
 def riddle_encounter():
 
     '''Solve the riddle, gives different options + a valuable treasure'''
 
-    riddles = ["What starts with an E, ends with an E, \n but only contains one letter?"]
+    riddles = ["What starts with an E, ends with an E,"]
+    riddles = ["but only contains one letter?"]
     riddle = random.choice(riddles)
     print("\033[32mYou come across a treasure chest and a\033[0m")
     print("\033[32msign with a riddle written on it\033[0m")
@@ -250,12 +266,13 @@ def riddle_encounter():
                     game_over()
                     break
                 else:
-                    print("\033[31mInvalid choice, please enter '1' or '2'\033[0m")
+                    print("\033[31mInvalid choice, enter '1' or '2'\033[0m")
                     continue
             break
         else:
             print("\033[32mIncorrect. You have failed the task.\033[0m")
             game_over()
+
 
 def player_encounter_goblin():
 
@@ -297,19 +314,18 @@ def player_encounter_goblin():
                         continue
             else:
                 print("\033[31mThe goblin now has ")
-                print("\033[31m" + str(goblin_health) +" health.\033[0m")
+                print("\033[31m" + str(goblin_health) + " health.\033[0m")
                 player_health -= goblin_attack
             if player_health <= 0:
-                    clearConsole()
-                    game_over()
+                game_over()
             else:
                 print("\033[31mYou now have\033[0m")
-                print("\033[31m" + str(player_health) + " health.\033[0m")                
-                print("\033[31mDo you want to attack or run?\033[0m") 
+                print("\033[31m" + str(player_health) + " health.\033[0m")        
+                print("\033[31mDo you want to attack or run?\033[0m")
                 print("\033[31mEnter '1' to attack and '2' to run.\033[0m")
                 choice = input("\033[31m>\033[0m ")
         elif choice == '2':
-            run_away_chance = random.randint(10,14)
+            run_away_chance = random.randint(10, 14)
             if run_away_chance <= 70:
                 clearConsole()
                 print("\033[32mYou ran away from the goblin!\033[0m")
@@ -326,7 +342,7 @@ def player_encounter_goblin():
                         game_over()
                         break
                     else:
-                        print("\033[31mInvalid choice, enter '1' or '2'\033[0m")
+                        print("\033[31mInvalid choice, type '1' or '2'\033[0m")
                         continue
                 else:
                     print("\033[31mYou have\033[0m")
@@ -338,9 +354,10 @@ def player_encounter_goblin():
             print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
             choice = input("\033[31m>\033[0m ")
 
+
 def meet_witch():
     '''
-    Function that introduce the witch, 
+    Function that introduce the witch,
     here the player is given a book and an option to proceed to the Wizard
     '''
     print("\033[35mA beautiful Witch appears\033[0m")
@@ -374,9 +391,10 @@ def meet_witch():
             print("\033[31mInvalid choice, please type 'y' or 'n'")
             continue
 
+
 def meet_wizard():
     '''
-    A powerful Wizard who looks for his lost treasure, 
+    A powerful Wizard who looks for his lost treasure,
     the player is given an option to give it to him or not
     '''
     print("\033[35mYou come across a wizard in the forest.")
@@ -445,8 +463,9 @@ def meet_wizard():
             clearConsole()
             continue
 
+
 def wild_stream():
-    
+
     '''
     The last obstacle in  the game, this is were the player
     ends up if they don't help the wizard and give him his treasure.
@@ -456,7 +475,7 @@ def wild_stream():
     print("2. Jump over")
     while True:
         choice = input("Enter 1 or 2: ")
-        if choice =='1':
+        if choice == '1':
             print("\033[32mYou swim over the wild stream.")
             print("\033[32mand make it safely to the other side.")
             print("Type '1' to continue or '2' to end game")
@@ -486,13 +505,14 @@ def wild_stream():
             print("\033[31mInvalid choice, please type '1' or '2'")
             continue
 
+
 def complete_game():
 
     '''The game is finished and they have won.
     The player is greeted by some celebrating forest gnomes'''
 
     print("\033[32m" + "Light from the outside world shines through the trees")
-    print("\033[32m" + "As you walk towards the end of the forest") 
+    print("\033[32m" + "As you walk towards the end of the forest")
     print("\033[32m" + "a couple of forest gnomes greet you")
     print("\033[36m" + "\"You made it!! You're alive!!\"")
     print("\033[32m" + "They chant and dance in a cirkel around you")
@@ -512,6 +532,7 @@ def complete_game():
         else:
             print("\033[31mInvalid choice, please type '1' or '2'")
             continue
+
 
 def game_over():
 
@@ -533,5 +554,6 @@ def game_over():
         else:
             print("\033[31mInvalid choice, please type '1' or '2'")
             continue
+
 
 start_game()

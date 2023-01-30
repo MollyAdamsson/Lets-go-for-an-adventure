@@ -54,22 +54,36 @@ the game and give you more information about your upcoming journey.
 
 * The first obstacle is a riddle, the player has to solve it before they can continue. If they get the riddle wrong they loose the game.
 
+![Riddle](readme.images/riddle.png)
+
 ### Meeting the characters
 
 * The player will get the chance of meeting a goblin, the player has to fight it and if they win they get a badge of honor to collect and then they can continue to meet the wizard. 
+
+![Goblin](readme.images/goblin.png)
+
 * The player will also get the chance of meeting a witch, she will give the player a few words of wisdom and then proceed to give them a "Book of wisdom" and the player collects it as well. 
+
+![Witch](readme.images/witch1.png)
+
 * The player will then get the chance of meeting a wizard, he will ask if the player has seen his treasure. If so and the player gives i to him he will help them to the end of the forest. If not - he says something snarky and disappears.
+
+![wizard](readme.images/wizard3.png)
 
 ### The wild stream
 
 * If the player doesn't help the wizard they are left alone to deal with the wild stream.
 * It is not that hard to get passed it and the player will soon after that see the end of the forest.
 
+![Wild stream](readme.images/stream.png)
+
 ### The end of the forest
 
 * When they arrive at the end they are greeted by a couple of forest gnomes.
 * The gnomes chant and exclaims happieness that the player made it out alive.
 * The player will after that be informed with that the game is over and they have the oppertunity to play again if they want.
+
+![Completed game](readme.images/complete%20game.png)
 
 ### Error messages
 

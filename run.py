@@ -25,14 +25,21 @@ def start_game():
     """
     Introduction and initial setup to game, rules and mission
     """
-
+    print("\033[32m" + """
+  ___ _   _      _   _              __                               _             _                _ 
+ |_ _| |_( )___ | |_(_)_ __  ___   / _|___ _ _   __ _ _ _    __ _ __| |_ _____ _ _| |_ _  _ _ _ ___| |
+  | ||  _|/(_-< |  _| | '  \/ -_) |  _/ _ \ '_| / _` | ' \  / _` / _` \ V / -_) ' \  _| || | '_/ -_)_|
+ |___|\__| /__/  \__|_|_|_|_\___| |_| \___/_|   \__,_|_||_| \__,_\__,_|\_/\___|_||_\__|\_,_|_| \___(_)
+                                                                                                      
+     """)
+     
     print("\033[32mWelcome to the adventure game!")
     print("\033[32mYou are now about to embark on an epic journey.")
     print("\033[32mfilled with challanges and obstacles.")
     print("\033[32mThe goal is to complete each task and get")
     print("\033[32mSto the other side \nof the woods so you can get home.")
     print("\033[32mThis is the adventure of a life time!")
-    player_name = input("\033[32mWhat is your name?\"")
+    player_name = input("\033[32mWhat is your name? ")
     clear_console()
     print("\033[32m" + "Welcome " + str(player_name) + " ""\033[0m")
     print("\033[32m" + "to the Damned Willow Forest!" + "\033[0m")

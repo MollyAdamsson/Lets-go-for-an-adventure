@@ -21,7 +21,7 @@
 * As a first time user I want to be able to explore all parts of the game
 * As a first time user I want to have fun!
 
-- #### Returning user goals
+- ### Returning user goals
 
 * As a returning visitor I want to be able to beat the game faster than before.
 * As a returning visitor I want to try to take another path and see where that leads me.
@@ -29,17 +29,26 @@
 
 ## The Game itself
 
-### Main menu
+### Welcome text
 
-* At the begining the user is asked if they want to start the game with a question asking: "Are you ready?" "Enter 1. to start game and enter 2. to quit".
+* At the begining the user is welcomed by a header saying "It's time for an adventure!" an underneath is a short text about the game and what the user should ecpect, it also ask you about your name.
 
-![Main menu](images/flowchart)
+![Welcome text](readme.images/Welcome%2Bheader.png)
+
+### Welcome text 2
+
+* The game continues with another informative text, welcoming you to 
+the game and give you more information about your upcoming journey.
+
+![Welcome text 2](readme.images/welcome2.png)
 
 ### Path ways
 
 * Different pathways will be presented during the game. Each one will take the player deeper inside the woods and each one will give the player the oppertunity to choose where to go. One patway has two pathways connected to it, if the player choose path 1 they will meet a goblin and if the player choose path 2 they will eventueally meet a witch.
 
-(exempelbild här?)
+![Pathway 1](readme.images/path1.png)
+![Pathway 2](readme.images/path2.png)
+![Pathway 3](readme.images/path3.png)
 
 ### Solve riddle
 

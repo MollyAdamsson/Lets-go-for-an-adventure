@@ -29,10 +29,8 @@ def start_game():
   ___ _   _      _   _              __                               _             _                _ 
  |_ _| |_( )___ | |_(_)_ __  ___   / _|___ _ _   __ _ _ _    __ _ __| |_ _____ _ _| |_ _  _ _ _ ___| |
   | ||  _|/(_-< |  _| | '  \/ -_) |  _/ _ \ '_| / _` | ' \  / _` / _` \ V / -_) ' \  _| || | '_/ -_)_|
- |___|\__| /__/  \__|_|_|_|_\___| |_| \___/_|   \__,_|_||_| \__,_\__,_|\_/\___|_||_\__|\_,_|_| \___(_)
-                                                                                                      
-     """)
-     
+ |___|\__| /__/  \__|_|_|_|_\___| |_| \___/_|   \__,_|_||_| \__,_\__,_|\_/\___|_||_\__|\_,_|_| \___(_)                                                                                            
+     """)    
     print("\033[32mWelcome to the adventure game!")
     print("\033[32mYou are now about to embark on an epic journey.")
     print("\033[32mfilled with challanges and obstacles.")
@@ -55,11 +53,11 @@ def start_game():
     print("\033[32m" + "Take a deep breath," + "\033[0m")
     print("\033[32m" + "and let the adventure begin!" + "\033[0m")
     print("\033[32m" + "Are you ready?" + "\033[0m")
-    print("\033[32m" + "Type 'y' for yes and 'n' for no" + "\033[0m")
+    print("\033[32m" + "Type '1' for yes and '2' for no" + "\033[0m")
 
     while True:
         choice = input("\033[32m" + "> " + "\033[0m")
-        if choice == 'y':
+        if choice == '1':
             clear_console()
             print("\033[32m" + "Here is some valid information ""\033[0m")
             print("\033[32m" + "about your character:""\033[0m")
@@ -70,15 +68,15 @@ def start_game():
             clear_console()
             path_choice()
             break
-        elif choice == 'n':
+        elif choice == '2':
+            clear_console()
             print("\033[32m" + "Thanks for playing," + "\033[0m")
             print("\033[32m" + "have a good day!" + "\033[0m")
             game_over()
             break
         else:
             print("\033[31m" + "Invalid choice," + "\033[0m")
-            print("\033[31m" + "type 'y' for yes or 'n' for no" + "\033[0m")
-            clear_console()
+            print("\033[31m" + "type '1' for yes or '2' for no" + "\033[0m")
             continue
 
 
@@ -89,14 +87,14 @@ def path_choice():
     """
 
     print("\033[32mLets get started. Do you want to move forward?\033[0m")
-    print("\033[32mType 'y' for yes and 'n' for no and quit game\033[0m")
+    print("\033[32mType '1' for yes and '2' for no and quit game\033[0m")
     while True:
         choice = input("> ")
-        if choice == 'y':
+        if choice == '1':
             clear_console()
             riddle_encounter()
             break
-        elif choice == 'n':
+        elif choice == '2':
             game_over()
             break
         else:
@@ -155,20 +153,20 @@ def path_choice_3():
     print("\033[35m" + "You stop in your tracks,")
     print("\033[35m" + "the smell of something rotten hits you!")
     print("\033[35m" + "Do you want to keep going?")
-    print("Type 'y' for yes or 'n' for no and run away.\033[0m")
+    print("Type '1' for yes or '2' for no and run away.\033[0m")
     while True:
         choice = input("> ")
-        if choice == 'y':
+        if choice == '1':
             clear_console()
             player_encounter_goblin()
             break
-        elif choice == 'n':
+        elif choice == '2':
             clear_console()
             print("\033[31mYou have no choice!\033[0m")
             player_encounter_goblin()
             break
         else:
-            print("\033[31mInvalid choice, please type 'y' or 'r'\033[0m")
+            print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
 
@@ -189,7 +187,7 @@ def path_choice_4():
     print("\033[36m\"I've been waiting for you!\"\033[0m")
     print("\033[36m\"To get to the end you must be even braver\"\033[0m")
     print("\033[36m\"hold on!\"\033[0m")
-    print("\033[35mType 'l' to go left or 'f' to go forward")
+    print("\033[35mType '1' to go left or '2' to go forward")
     while True:
         choice = input("> \033[0m")
         if choice == 'l':
@@ -200,10 +198,10 @@ def path_choice_4():
             print("\033[31mThe trees grow too dense here,\033[0m")
             print("\033[31myou can't get through\033[0m")
             print("\033[31mYou have to take another path\033[0m")
-            print("\033[31mChoose 'l' to go left\033[0m")
+            print("\033[31mChoose '1' to go left\033[0m")
             while True:
                 choice = input("> ")
-                if choice == 'l':
+                if choice == '1':
                     clear_console()
                     meet_witch()
                     break
@@ -212,7 +210,7 @@ def path_choice_4():
                     print("\033[1;31;40mtype 'l' to keep going\033[0;37;40m")
                     continue
         else:
-            print("\033[91mInvalid choice, please type 'l' or 'f'\033[0m")
+            print("\033[91mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
 
@@ -242,19 +240,19 @@ def path_choice_5():
     print("\033[35m" + "You then say to yourself: ")
     print("\033[36m" + "\"Well I cant stay here! I have to keep going\"")
     print("\033[35m" + "Do you want to continue?")
-    print("\033[35m" + "type 'y' for yes and 'n' for no and end game")
+    print("\033[35m" + "type '1' for yes and '2' for no and end game")
     while True:
         choice = input("> ")
-        if choice == 'y':
+        if choice == '1':
             clear_console()
             meet_wizard()
             break
-        elif choice == 'n':
+        elif choice == '2':
             clear_console()
             game_over()
             break
         else:
-            print("\033[91mInvalid choice, please type 'y' or 'n'\033[0m")
+            print("\033[91mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
 

@@ -115,7 +115,7 @@ def path_choice_2():
 
     """
     Path choice 2, here the player has to make
-    a choice if the want to go to path 3 or 4
+    a choice if the want to go to path 3 or 4.
     """
 
     print("\033[35m" + "The air is damp and filled with" + "\033[0m")

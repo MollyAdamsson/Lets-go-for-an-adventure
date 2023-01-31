@@ -107,7 +107,7 @@ def path_choice():
             game_over()
             break
         else:
-            print("\033[31mInvalid choice, please type 'y' or 'n'\033[0m")
+            print("\033[31mInvalid choice, please type '1' or '2'\033[0m")
             continue
 
 

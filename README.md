@@ -136,6 +136,7 @@ and sections.
 * And the narrative text are a magenta color.
 
 Here is an image of the magenta narrative text and the cyan dialouge:
+
 ![Pathway 2](readme.images/owl.png)
 
 
@@ -203,6 +204,16 @@ code in your IDE: pip3 freeze > requirements.txt
 * Search for the repository name you've chosen
 * Make sure you have selected the correct branch (master/main), and select the method you desire.
 
+### To create a clone of this project
+
+* Go to GitHub
+* Under the repository's name you can click on the code tab
+* In the clone with HTTPS section you click on the clipboard icon 
+to copy the given URL
+* in our IDE you open Git Bash
+* Change the current working directory to the location where you want the cloned directory to be made
+* Type git clone, and then you paste URL copied from GitHub
+* Press enter and the local clone will be created
 
 ## Credits
 

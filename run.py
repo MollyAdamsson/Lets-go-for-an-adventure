@@ -585,8 +585,8 @@ def game_over():
             start_game()
             break
         elif choice == 'n':
-            print("\033[32m" + "Thank you for playing and welcome back!")
             clear_console()
+            print("\033[32m" + "Thank you for playing and welcome back!")
             break
         else:
             print("\033[31mInvalid choice, please type '1' or '2'")

@@ -6,7 +6,7 @@
 
 * I have created a flowchart to help myself plan out the bascis of the game. This helped me a lot when I started to plan out which path was connected to which and so on. When looking at the chart one can understand the basic knowledge of what to do.
 
-* The original one I made was not the one that resulted in the finished product, I realised that some of the steps that I first planned out was a bit unnecessary. And I also felt that i wanted to make different paths for frequent players.
+* The original one I made was not the one that resulted in the finished product, I realised that some of the steps that I first planned out was a bit unnecessary. And I also felt that i wanted to make different paths for frequent players. This means that the frequent players has the chance of experiencing different stories each time they play. 
 
 * This is the one I ended up using:
 ![Flowchart](readme.images/flowchart.png)
@@ -27,11 +27,11 @@
 * As a returning visitor I want to try to take another path and see where that leads me.
 * As a returning visitor I want to be able to make my own decisions
 
-## The Game itself
+## Features and the game itself
 
 ### Welcome text
 
-* At the begining the user is welcomed by a header saying "It's time for an adventure!" an underneath is a short text about the game and what the user should ecpect, it also ask you about your name.
+* At the begining the user is welcomed by a header saying "It's time for an adventure!" and underneath is a short text about the game and what the user should expect, it also ask you about your name.
 
 ![Welcome text](readme.images/Welcome%2Bheader.png)
 
@@ -47,7 +47,6 @@ the game and give you more information about your upcoming journey.
 * Different pathways will be presented during the game. Each one will take the player deeper inside the woods and each one will give the player the oppertunity to choose where to go. One patway has two pathways connected to it, if the player choose path 1 they will meet a goblin and if the player choose path 2 they will eventueally meet a witch.
 
 ![Pathway 1](readme.images/path1.png)
-![Pathway 2](readme.images/path2.png)
 ![Pathway 3](readme.images/path3.png)
 
 ### Solve riddle
@@ -90,8 +89,10 @@ the game and give you more information about your upcoming journey.
 * If the player enters an invalid answer they will be presented with an error message.
 * They can look a bit different but here are a few of them:
 
-![Error 1](readme.images/invalid.png)
-![Error 2](readme.images/error3.png)
+
+1. ![Error 1](readme.images/invalid.png)
+
+2. ![Error 2](readme.images/error3.png)
 
 
 ### Game over
@@ -99,24 +100,10 @@ the game and give you more information about your upcoming journey.
 * If the player decides to end game they will be infomred that the game is over. 
 * There is a chance to retry the game if the player wants to:
 
-image of that here
+1. ![Game over](readme.images/game%20over.png)
+2. ![game over2](readme.images/gameover2.png)
 
-### Features
-
-* I decided to add some color to the text to make it easier for the player.
-* It mostly had to do with it looking a bit cooler, and so that it would be
-easier on the eye if there was something separating the different functions 
-and sections.
-* The text is green when something is good/the game is just starting 
-* The dialouges are a cyan color
-* When meeting the goblin/error messages are red. (To indicate taht something is bad)
-* And the narrative text are a magenta color.
-
-For example:
-image 1 on text
-image 2 of text
-
-## Features left to implement
+### Features left to implement
 * I would like to add some more background story, to make it a bit more interesting
 * I would like to add some music
 * I would like to add so that the player can add to their health
@@ -125,13 +112,34 @@ image 2 of text
 * I would like to add a typing function, so that text rolls out on the 
 screen when the player enters a new section.
 
+### Styling
+
+* I decided to add some color to the text to make it easier for the player.
+* It mostly had to do with it looking a bit cooler, and so that it would be
+easier on the eye if there was something separating the different functions 
+and sections.
+* The text is green when something is good/the game is just starting 
+* The dialogues are a cyan color
+* When meeting the goblin/error messages are red. (To indicate that there is danger/ that something is bad.)
+* And the narrative text are a magenta color.
+
+Here is an image of the magenta narrative text and the cyan dialouge:
+![Pathway 2](readme.images/path2.png)
+
+## Quiz model
+
+* I used a quiz model for this game, giving the player options while choosing to proceed.
+* The game collects the information that the player gives while choosing and 
+sends the player in the right direction.
+
 ## Technologies Used
 
-* Gitpod
+* Github
 * Gitpod
 * Python
 * Stack overflow
-
+* Patorjk for the header
+* ANSI colors for the text
 
 ## Testing
 
@@ -142,16 +150,18 @@ screen when the player enters a new section.
 * When asked a question you must enter the options written on the screen
 * When asked the riddle you must answer correctly otherwise the game ends
 * Every path/character is well connected
-* every path leads to the wizard
+* Wvery path leads to the wizard
 * You always get the chance to end game
 
 ### validator testing
 
-image here:
+* I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned from pep8online.com
+
+![Validator](readme.images/validatornoerrors2.png)
 
 ### Unfixed bugs
 * There are no unfixed bugs
-* Partner and friends have had their turn on the game to get the chance to break it
+* Partner and friends have had their turn on the game to get the chance to break it, and with their help I made it foolproof.
 
 ## Deployment
 

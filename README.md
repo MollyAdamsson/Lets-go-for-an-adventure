@@ -37,7 +37,7 @@
 
 * At the begining the user is welcomed by a header saying "It's time for an adventure!" and underneath is a short text about the game and what the user should expect, it also ask you about your name.
 
-![Welcome text](readme.images/Welcome%2Bheader.png)
+![Welcome text](readme.images/header+welcome.png)
 
 
 ### Welcome text 2
@@ -187,6 +187,21 @@ sends the player in the right direction.
 ## Deployment
 
 ### [Heroku](https://www.heroku.com/) Deployment:
+
+* Ensure your requirements.txt file has the required dependencies. To do this you can use the following
+code in your IDE: pip3 freeze > requirements.txt
+* Create or login to you Heroku account
+* Navigate to Dashboard
+* Click and select "Create app" in the middle of the page
+* Enter a unique name for you app
+* Select region and the "create app"
+
+### App deployment
+* Navgiate to the deploy section
+* Scroll down to the "deployment method" and select "Github"
+* Authorise the connection
+* Search for the repository name you've chosen
+* Make sure you have selected the correct branch (master/main), and select the method you desire.
 
 
 ## Credits

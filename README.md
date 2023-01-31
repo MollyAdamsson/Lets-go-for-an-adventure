@@ -134,12 +134,14 @@ sends the player in the right direction.
 
 ## Technologies Used
 
-* Github
-* Gitpod
-* Python
-* Stack overflow
-* Patorjk for the header
-* ANSI colors for the text
+* [GitHub](https://github.com/) - to host the repositories.
+* [Gitpod](https://www.gitpod.io/) - as the IDE for the application.
+* [Python](https://docs.python.org/3/contents.html) - primary language of the application.
+* [Stack overflow](https://stackoverflow.com/) - basic explaining 
+* [Patorjk](https://patorjk.com/) - for the header
+* [ANSI](https://gist.github.com/Prakasaka/219fe5695beeb4d6311583e79933a009) - colors for the text
+* [ANSI](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences) - also used for color changes
+* [PEP8](http://pep8online.com/) - for testing and validating the code.
 
 ## Testing
 
@@ -166,13 +168,14 @@ sends the player in the right direction.
 ## Deployment
 
 
-### Heroku Deployment
+### Heroku [Heroku](https://www.heroku.com/) Deployment:
+
 
 ## Credits
 
 ### content
 * I used Code Institute's Love Sandwiches Walkthrough for guidance with code structure and deployment steps.
-* To change the color of the text I used ANSI color. Page from Stackoverflow helping it explain it to me found [here](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences)
+
 
 
 ### Acknowledgements

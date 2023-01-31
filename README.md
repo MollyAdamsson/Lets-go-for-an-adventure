@@ -2,6 +2,7 @@
 
 * This is a text adventure game based off of my own imagination. Worth mentioning is the fact that it has some inspiration taken from The lord of the rings. The player is presented with the context of them standing outside of a forest, and they have to go through it if they want to go back home. The sign at the edge of the forest explains that they will encounter some obstacles on their way. Well inside the player will meet everythig between a goblin to a witch, each of these characters will offer something valuable. At the end the player will meet a Wizard, he wants to know if the player has seen his treasure, and if so the Wizard will help the player to get to the end of the forest so that he can go home, if not the player has to get over the wild stream by themself.
 
+
 ## Flowchart
 
 * I have created a flowchart to help myself plan out the bascis of the game. This helped me a lot when I started to plan out which path was connected to which and so on. When looking at the chart one can understand the basic knowledge of what to do.
@@ -10,6 +11,7 @@
 
 * This is the one I ended up using:
 ![Flowchart](readme.images/flowchart.png)
+
 
 ## User Experience
 
@@ -21,13 +23,15 @@
 * As a first time user I want to be able to explore all parts of the game
 * As a first time user I want to have fun!
 
-- ### Returning user goals
 
+- ### Returning user goals
 * As a returning visitor I want to be able to beat the game faster than before.
 * As a returning visitor I want to try to take another path and see where that leads me.
 * As a returning visitor I want to be able to make my own decisions
 
+
 ## Features and the game itself
+
 
 ### Welcome text
 
@@ -35,12 +39,14 @@
 
 ![Welcome text](readme.images/Welcome%2Bheader.png)
 
+
 ### Welcome text 2
 
 * The game continues with another informative text, welcoming you to 
 the game and give you more information about your upcoming journey.
 
-![Welcome text 2](readme.images/welcome2.png)
+![Welcome text 2](readme.images/welcome3.png)
+
 
 ### Path ways
 
@@ -49,11 +55,13 @@ the game and give you more information about your upcoming journey.
 ![Pathway 1](readme.images/path1.png)
 ![Pathway 3](readme.images/path3.png)
 
+
 ### Solve riddle
 
 * The first obstacle is a riddle, the player has to solve it before they can continue. If they get the riddle wrong they loose the game.
 
 ![Riddle](readme.images/riddle.png)
+
 
 ### Meeting the characters
 
@@ -69,12 +77,14 @@ the game and give you more information about your upcoming journey.
 
 ![wizard](readme.images/wizard3.png)
 
+
 ### The wild stream
 
 * If the player doesn't help the wizard they are left alone to deal with the wild stream.
 * It is not that hard to get passed it and the player will soon after that see the end of the forest.
 
 ![Wild stream](readme.images/stream.png)
+
 
 ### The end of the forest
 
@@ -84,15 +94,15 @@ the game and give you more information about your upcoming journey.
 
 ![Completed game](readme.images/complete%20game.png)
 
+
 ### Error messages
 
 * If the player enters an invalid answer they will be presented with an error message.
 * They can look a bit different but here are a few of them:
 
+1. ![Error 1](readme.images/invalid2.png)
 
-1. ![Error 1](readme.images/invalid.png)
-
-2. ![Error 2](readme.images/error3.png)
+2. ![Error 2](readme.images/dense.png)
 
 
 ### Game over
@@ -103,6 +113,7 @@ the game and give you more information about your upcoming journey.
 1. ![Game over](readme.images/game%20over.png)
 2. ![game over2](readme.images/gameover2.png)
 
+
 ### Features left to implement
 * I would like to add some more background story, to make it a bit more interesting
 * I would like to add some music
@@ -111,6 +122,7 @@ the game and give you more information about your upcoming journey.
 * I would like to add one more obstacle to get through
 * I would like to add a typing function, so that text rolls out on the 
 screen when the player enters a new section.
+
 
 ### Styling
 
@@ -124,13 +136,15 @@ and sections.
 * And the narrative text are a magenta color.
 
 Here is an image of the magenta narrative text and the cyan dialouge:
-![Pathway 2](readme.images/path2.png)
+![Pathway 2](readme.images/owl.png)
+
 
 ## Quiz model
 
 * I used a quiz model for this game, giving the player options while choosing to proceed.
 * The game collects the information that the player gives while choosing and 
 sends the player in the right direction.
+
 
 ## Technologies Used
 
@@ -143,7 +157,9 @@ sends the player in the right direction.
 * [ANSI](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences) - also used for color changes
 * [PEP8](http://pep8online.com/) - for testing and validating the code.
 
+
 ## Testing
+
 
 ### Manual testing
 
@@ -155,20 +171,22 @@ sends the player in the right direction.
 * Wvery path leads to the wizard
 * You always get the chance to end game
 
+
 ### validator testing
 
 * I tested it through the python validator and no errors or warnings were shown. Everything works perfectly, no errors were returned from pep8online.com
 
 ![Validator](readme.images/validatornoerrors2.png)
 
+
 ### Unfixed bugs
 * There are no unfixed bugs
 * Partner and friends have had their turn on the game to get the chance to break it, and with their help I made it foolproof.
 
+
 ## Deployment
 
-
-### Heroku [Heroku](https://www.heroku.com/) Deployment:
+### [Heroku](https://www.heroku.com/) Deployment:
 
 
 ## Credits
@@ -176,9 +194,9 @@ sends the player in the right direction.
 ### content
 * I used Code Institute's Love Sandwiches Walkthrough for guidance with code structure and deployment steps.
 
-
-
 ### Acknowledgements
+* This adventure game was created as Portfolio Project 3 for the the Full Stack Software Developer diploma by the [Code Institute](https://codeinstitute.net/). It was with great pleasure to explore the basics of most games and to achieve some new skills.
+* I would like to thank my mentor [Gareth McGirr](https://www.linkedin.com/in/gareth-mcgirr/) for helping me and guiding through this project, the tutors at code institute for being extremely helpful considering my many questions and to my partner who helped me with the storyline.
 
 
 Molly Adamsson, 2023

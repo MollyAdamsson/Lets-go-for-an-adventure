@@ -194,7 +194,7 @@ def path_choice_4():
             clear_console()
             meet_witch()
             break
-        elif choice == 'f':
+        elif choice == '2':
             print("\033[31mThe trees grow too dense here,\033[0m")
             print("\033[31myou can't get through\033[0m")
             print("\033[31mYou have to take another path\033[0m")
